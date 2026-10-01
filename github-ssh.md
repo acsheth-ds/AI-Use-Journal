@@ -11,9 +11,10 @@
 
 ```
 cd ~/Projects/TestRepo ## that's where my project is, and there's a .git file there, too!
+ssh-add -l ## Check if the ssh-agent is aware of the identity you want to use or not! If not, then add it!
 ssh -T git@git-work ## this connects the work profile to github
-git remote set-url git@git-work:acsheth-ds/TestRepo.git ## this tells git to use ssh (with the work profile!, see it is invoked here again!) to set the remote repo to acsheth-ds/TestRepo
-git add . ## add all changes
+git remote set-url origin git@git-work:acsheth-ds/TestRepo.git ## this tells git to use ssh (with the work profile!, see it is invoked here again!) to set the remote repo to acsheth-ds/TestRepo
+git add . ## add all changes, or specific ones
 git commit -m "hiiii" ## consider this a commit
 git push ## push to remote.
 ```
