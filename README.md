@@ -18,9 +18,9 @@ Hello! this is a test repository made to test multi-user version control when th
 - Here is the full set of commonds one should run to activate a repo using the work profile :
 
 ```
-cd ~/Projects/TestRpo ## that's where my project is, and there's a .git file there, too!
+cd ~/Projects/TestRepo ## that's where my project is, and there's a .git file there, too!
 ssh -T git@git-work ## this connects the work profile to github
-git remote set-url git@git-work:acsheth-ds/TestRpo.git ## this tells git to use ssh (with the work profile!, see it is invoked here again!) to set the remote repo to acsheth-ds/TestRpo
+git remote set-url git@git-work:acsheth-ds/TestRepo.git ## this tells git to use ssh (with the work profile!, see it is invoked here again!) to set the remote repo to acsheth-ds/TestRepo
 git add . ## add all changes
 git commit -m "hiiii" ## consider this a commit
 git push ## push to remote.
